@@ -1,0 +1,22 @@
+// Elegibilidade para votar
+import java.util.Scanner;
+public class Elegiblidade_de_votar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Qual sua idade: ");
+		byte idade = input.nextByte();
+		
+		if (idade < 16) {
+			System.out.println("O voto não é elegível");
+		}
+		else if (idade >= 16 && idade <= 18 || idade >= 70) {
+			System.out.println("O voto é opcional");
+		}
+		else {
+			System.out.println("O voto é elegível");
+		}
+	}
+
+}
